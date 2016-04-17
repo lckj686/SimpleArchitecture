@@ -18,17 +18,17 @@ android {
         }
     }
 
-    packagingOptions{
-        exclude'META-INF/DEPENDENCIES.txt'
-        exclude'META-INF/LICENSE.txt'
-        exclude'META-INF/NOTICE.txt'
-        exclude'META-INF/NOTICE'
-        exclude'META-INF/LICENSE'
-        exclude'META-INF/DEPENDENCIES'
-        exclude'META-INF/notice.txt'
-        exclude'META-INF/license.txt'
-        exclude'META-INF/dependencies.txt'
-        exclude'META-INF/LGPL2.1'
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
     }
 }
 
@@ -40,7 +40,7 @@ dependencies {
     compile 'com.jakewharton.rxbinding:rxbinding:0.4.0'
     compile 'com.jakewharton.rxbinding:rxbinding-support-v4:0.4.0'
     compile 'com.squareup.retrofit2:retrofit:2.0.1'
-    //    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.jakewharton:butterknife:7.0.1'
     compile 'com.squareup.okhttp3:okhttp:3.2.0'
     compile 'com.squareup.okio:okio:1.7.0'
     compile 'com.google.code.gson:gson:2.6.2'
@@ -52,4 +52,5 @@ dependencies {
     compile 'com.squareup.retrofit2:adapter-rxjava:2.0.2'
     compile 'com.squareup.retrofit2:converter-protobuf:2.0.2'
     compile 'com.google.protobuf:protobuf-java:2.4.1'
+    compile 'com.facebook.fresco:fresco:0.9.0'
 }

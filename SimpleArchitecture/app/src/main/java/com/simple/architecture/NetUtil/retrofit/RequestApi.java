@@ -1,4 +1,4 @@
-package com.simple.architecture.retrofit;
+package com.simple.architecture.NetUtil.retrofit;
 
 import java.util.HashMap;
 import java.util.Map;

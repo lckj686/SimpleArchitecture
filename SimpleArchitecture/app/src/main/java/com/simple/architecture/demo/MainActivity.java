@@ -1,12 +1,12 @@
-package com.simple.architecture;
+package com.simple.architecture.demo;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 
-import com.simple.architecture.master.R;
+import com.simple.architecture.NetUtil.retrofit.DemoRetrofit;
+import com.simple.architecture.R;
 import com.simple.architecture.rxjava.OperateSubject;
-import com.simple.architecture.retrofit.DemoRetrofit;
 
 
 public class MainActivity extends AppCompatActivity {

@@ -1,4 +1,4 @@
-package com.simple.architecture.retrofit.converter;
+package com.simple.architecture.NetUtil.retrofit.converter;
 
 import com.alibaba.fastjson.JSON;
 

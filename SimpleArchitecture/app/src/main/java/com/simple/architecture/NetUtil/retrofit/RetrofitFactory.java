@@ -1,6 +1,6 @@
-package com.simple.architecture.retrofit;
+package com.simple.architecture.NetUtil.retrofit;
 
-import com.simple.architecture.retrofit.converter.FastConverterFactory;
+import com.simple.architecture.NetUtil.retrofit.converter.FastConverterFactory;
 
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;

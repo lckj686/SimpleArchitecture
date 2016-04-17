@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/RxJavaSucerDemo.iml" filepath="$PROJECT_DIR$/RxJavaSucerDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SimpleArchitecture.iml" filepath="$PROJECT_DIR$/SimpleArchitecture.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baselibrary/baselibrary.iml" filepath="$PROJECT_DIR$/baselibrary/baselibrary.iml" />
     </modules>
   </component>
 </project>

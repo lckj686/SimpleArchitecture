@@ -17,7 +17,7 @@
  * along with Meizhi.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.simple.architecture.retrofit;
+package com.simple.architecture.NetUtil.retrofit;
 
 import android.util.Log;
 
