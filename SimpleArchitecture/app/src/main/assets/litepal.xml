@@ -6,7 +6,7 @@
     <version value="1" ></version>
 
     <list>
-        <mapping class="com.simple.architecture.db.Form"></mapping>
+        <mapping class="com.simple.architecture.frame.db.Form"></mapping>
         
     </list>
 
