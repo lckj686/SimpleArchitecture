@@ -1,6 +1,4 @@
-package com.simple.architecture.mvp.presenter;
-
-import com.simple.architecture.mvp.contract.RxAskContract;
+package com.simple.architecture.mvp.RxAskTask;
 
 import rx.subjects.PublishSubject;
 import rx.subjects.SerializedSubject;
@@ -9,11 +7,11 @@ import rx.subjects.Subject;
 /**
  * Created by sucer on 2016/4/19.
  */
-public class RxAskP implements RxAskContract.AskPresenter{
+public class RxAskPresenter implements RxAskContract.AskPresenter{
     RxAskContract.AskUi ui;
     Subject bus = new SerializedSubject<>(PublishSubject.create());
 
-    public RxAskP(RxAskContract.AskUi ui){
+    public RxAskPresenter(RxAskContract.AskUi ui){
         this.ui = ui;
 
 

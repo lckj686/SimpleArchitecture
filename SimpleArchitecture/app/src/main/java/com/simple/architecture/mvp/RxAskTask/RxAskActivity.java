@@ -1,4 +1,4 @@
-package com.simple.architecture.mvp.ui;
+package com.simple.architecture.mvp.RxAskTask;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -9,8 +9,6 @@ import android.widget.TextView;
 import com.jakewharton.rxbinding.view.RxView;
 import com.jakewharton.rxbinding.widget.RxTextView;
 import com.simple.architecture.R;
-import com.simple.architecture.mvp.contract.RxAskContract;
-import com.simple.architecture.mvp.presenter.RxAskP;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -46,7 +44,7 @@ public class RxAskActivity extends Activity implements RxAskContract.AskUi {
         setContentView(R.layout.activity_rx_mvp_demo);
         ButterKnife.bind(this);
 
-        new RxAskP(this).run();
+        new RxAskPresenter(this).run();
 
 
     }

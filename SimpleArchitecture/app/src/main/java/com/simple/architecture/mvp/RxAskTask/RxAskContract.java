@@ -1,4 +1,4 @@
-package com.simple.architecture.mvp.contract;
+package com.simple.architecture.mvp.RxAskTask;
 
 import rx.Observable;
 import rx.Observer;

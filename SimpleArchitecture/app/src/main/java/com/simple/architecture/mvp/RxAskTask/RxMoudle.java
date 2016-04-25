@@ -1,11 +1,11 @@
-package com.simple.architecture.mvp.moudle;
+package com.simple.architecture.mvp.RxAskTask;
 
 import rx.Observable;
 
 /**
  * Created by sucer on 2016/4/19.
  */
-public class RxRequest {
+public class RxMoudle {
 
     public static Observable request(String s){
 

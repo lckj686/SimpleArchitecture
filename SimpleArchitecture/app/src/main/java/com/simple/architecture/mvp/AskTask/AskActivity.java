@@ -1,4 +1,4 @@
-package com.simple.architecture.mvp.ui;
+package com.simple.architecture.mvp.AskTask;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -8,8 +8,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.simple.architecture.R;
-import com.simple.architecture.mvp.contract.AskContract;
-import com.simple.architecture.mvp.presenter.AskP;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -40,7 +38,7 @@ public class AskActivity extends Activity implements AskContract.AskUi {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rx_mvp_demo);
         ButterKnife.bind(this);
-        presenter = new AskP(this);
+        presenter = new AskPresenter(this);
 
         btnA.setOnClickListener(new View.OnClickListener() {
             @Override

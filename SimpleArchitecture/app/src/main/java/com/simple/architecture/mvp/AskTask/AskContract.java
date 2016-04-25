@@ -1,4 +1,4 @@
-package com.simple.architecture.mvp.contract;
+package com.simple.architecture.mvp.AskTask;
 
 /**
  * Created by sucer on 2016/4/19.
