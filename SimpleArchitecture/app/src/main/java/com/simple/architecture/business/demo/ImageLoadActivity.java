@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 
 import com.simple.architecture.frame.imageLoader.fresco.ImageViewFresso;
-import com.simple.architecture.frame.imageLoader.wrap.SimpleOption;
+import com.simple.architecture.frame.imageLoader.wrapper.SimpleOption;
 import com.simple.architecture.R;
 
 import butterknife.Bind;
