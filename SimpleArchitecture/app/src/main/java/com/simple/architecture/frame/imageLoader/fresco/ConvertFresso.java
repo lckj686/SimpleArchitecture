@@ -1,0 +1,102 @@
+package com.simple.architecture.frame.imageLoader.fresco;
+
+import android.content.Context;
+import android.graphics.Bitmap;
+import android.net.Uri;
+
+import com.facebook.drawee.backends.pipeline.Fresco;
+import com.facebook.drawee.generic.GenericDraweeHierarchy;
+import com.facebook.drawee.generic.RoundingParams;
+import com.facebook.drawee.view.SimpleDraweeView;
+import com.facebook.imagepipeline.core.ImagePipelineConfig;
+import com.simple.architecture.frame.imageLoader.wrapper.CustOption;
+import com.simple.architecture.frame.imageLoader.wrapper.IConvert;
+
+/**
+ * Description:
+ * Created by liw on 2016/4/26.
+ */
+public class ConvertFresso<T extends SimpleDraweeView> implements IConvert<T> {
+
+
+
+
+    // 根据应用程序最大可用内存获取图片压缩较优大小
+    private long getCompress() {
+        long maxMemory = Runtime.getRuntime().maxMemory();
+        return maxMemory / (1024 * 1100);
+    }
+
+    @Override
+    public void init(Context context) {
+
+        ImagePipelineConfig config = null;
+        if (getCompress() < 150) {
+            config = ImagePipelineConfig.newBuilder(context)
+                    .setBitmapsConfig(Bitmap.Config.RGB_565)
+                    .build();
+        } else {
+            config = ImagePipelineConfig.newBuilder(context)
+                    .setBitmapsConfig(Bitmap.Config.ARGB_8888)
+                    .build();
+        }
+
+        Fresco.initialize(context, config);
+
+    }
+
+
+    @Override
+    public void setImageUrl(SimpleDraweeView imageView, CustOption option, String url) {
+        if (option != null){
+            parseOption(imageView, option);
+        }
+        imageView.setImageURI(Uri.parse(url));
+    }
+
+
+
+    /**
+     * 解析 option进行定制
+     *
+     * @param imageView
+     */
+    private void parseOption(SimpleDraweeView imageView,  CustOption option ) {
+        if (option == null) {
+            return;
+        }
+
+        GenericDraweeHierarchy hierarchy = imageView.getHierarchy();
+
+        //占位符
+        if (option.defaultRes != null) {
+
+            hierarchy.setPlaceholderImage(option.defaultRes);
+        }
+
+        RoundingParams roundingParams = hierarchy.getRoundingParams();
+
+
+        //圆角
+        if (option.corner != null) {
+            if(roundingParams == null){
+                roundingParams = new RoundingParams();
+            }
+//            roundingParams.setOverlayColor(Color.RED);
+//            roundingParams.setBorder(Color.GREEN,1f);
+            roundingParams.setCornersRadius(option.corner);
+
+            hierarchy.setRoundingParams(roundingParams);
+        }
+
+        //圆圈
+        if (option.isRound != null) {
+            if(roundingParams == null){
+                roundingParams = new RoundingParams();
+            }
+            roundingParams.setRoundAsCircle(option.isRound);
+        }
+
+    }
+
+}

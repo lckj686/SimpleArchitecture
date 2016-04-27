@@ -3,7 +3,6 @@ package com.simple.architecture.business.demo;
 import android.database.sqlite.SQLiteDatabase;
 
 import com.facebook.stetho.Stetho;
-import com.simple.architecture.frame.imageLoader.fresco.ImageLoaderFresso;
 
 import org.litepal.LitePalApplication;
 import org.litepal.tablemanager.Connector;
@@ -22,7 +21,7 @@ public class CustApplication extends LitePalApplication {
         super.onCreate();
 
         instance = this;
-        ImageLoaderFresso.getInstance().init(this);
+
         initDb();
         initStetho();
 

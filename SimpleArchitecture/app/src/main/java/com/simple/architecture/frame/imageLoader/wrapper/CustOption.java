@@ -1,9 +1,11 @@
-package com.simple.architecture.frame.imageLoader.wrap;
+package com.simple.architecture.frame.imageLoader.wrapper;
 
 /**
+ * custImageView 的属性
+ * 圆角 背景图
  * Created by sucer on 2016/4/17.
  */
-public class SimpleOption {
+public class CustOption {
 
     //    public Integer defaultUrlR;
 //    public Integer errorDrawableRes;
@@ -12,17 +14,17 @@ public class SimpleOption {
     public Float corner;
 
 
-    public SimpleOption setDefaultRes(Integer defaultRes) {
+    public CustOption setDefaultRes(Integer defaultRes) {
         this.defaultRes = defaultRes;
         return this;
     }
 
-    public SimpleOption setRound(Boolean round) {
+    public CustOption setRound(Boolean round) {
         isRound = round;
         return this;
     }
 
-    public SimpleOption setCorner(Float corner) {
+    public CustOption setCorner(Float corner) {
         this.corner = corner;
         return this;
     }
