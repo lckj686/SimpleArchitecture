@@ -2,6 +2,7 @@ package com.simple.architecture.frame.imageLoader.cust;
 
 import android.content.Context;
 
+import com.simple.architecture.frame.imageLoader.fresco.ConvertFresso;
 import com.simple.architecture.frame.imageLoader.wrapper.CustOption;
 import com.simple.architecture.frame.imageLoader.wrapper.IConvert;
 import com.simple.architecture.frame.imageLoader.wrapper.IImageLoader;
@@ -12,7 +13,7 @@ import com.simple.architecture.frame.imageLoader.wrapper.IImageLoader;
  * Created by liw on 2016/4/26.
  */
 public class CustImageLoader implements IImageLoader<CustImageView> {
-    private IConvert<CustImageView> convert;
+    private IConvert<CustImageView> convert = new ConvertFresso<>();
 
     static CustImageLoader custImageLoader;
 
@@ -20,6 +21,7 @@ public class CustImageLoader implements IImageLoader<CustImageView> {
         if (custImageLoader == null) {
             custImageLoader = new CustImageLoader();
         }
+
         return custImageLoader;
     }
 
