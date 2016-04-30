@@ -6,7 +6,7 @@ import android.text.TextUtils;
 import android.util.Log;
 
 import com.simple.architecture.business.utils.IdNameFactory;
-import com.simple.architecture.frame.utils.EmptyUtil;
+import com.frame.utils.EmptyUtil;
 import com.simple.architecture.R;
 
 import org.xmlpull.v1.XmlPullParser;

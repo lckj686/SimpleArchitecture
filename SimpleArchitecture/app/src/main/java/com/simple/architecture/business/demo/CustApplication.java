@@ -11,8 +11,7 @@ import org.litepal.tablemanager.Connector;
  * Created by sucer on 2016/4/18.
  */
 public class CustApplication extends LitePalApplication {
-//    public static SqlBrite sqlBrite;
-//    public static BriteDatabase db;
+
     public static CustApplication instance;
     SQLiteDatabase db;
 
@@ -37,4 +36,6 @@ public class CustApplication extends LitePalApplication {
     private void initStetho() {
         Stetho.initializeWithDefaults(this);
     }
+
+
 }

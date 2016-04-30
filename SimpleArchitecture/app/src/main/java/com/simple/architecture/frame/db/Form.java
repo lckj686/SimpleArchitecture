@@ -1,4 +1,4 @@
-package com.simple.architecture.frame.db;
+package com.frame.db;
 
 import org.litepal.annotation.Column;
 import org.litepal.crud.DataSupport;
