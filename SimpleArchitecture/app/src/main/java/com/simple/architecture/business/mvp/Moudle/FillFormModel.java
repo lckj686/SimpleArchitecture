@@ -5,9 +5,9 @@ import android.content.res.XmlResourceParser;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.simple.architecture.business.utils.IdNameFactory;
 import com.frame.utils.EmptyUtil;
 import com.simple.architecture.R;
+import com.simple.architecture.business.utils.IdNameFactory;
 
 import org.xmlpull.v1.XmlPullParser;
 

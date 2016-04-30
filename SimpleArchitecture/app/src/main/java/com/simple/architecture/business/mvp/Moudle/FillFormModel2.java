@@ -3,8 +3,8 @@ package com.simple.architecture.business.mvp.Moudle;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.simple.architecture.frame.db.Form;
 import com.simple.architecture.business.mvp.Bean.FormEvent;
+import com.simple.architecture.frame.db.Form;
 
 import org.litepal.crud.DataSupport;
 

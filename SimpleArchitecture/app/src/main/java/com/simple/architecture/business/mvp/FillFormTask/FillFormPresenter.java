@@ -2,12 +2,13 @@ package com.simple.architecture.business.mvp.FillFormTask;
 
 import android.util.Log;
 
-import com.simple.architecture.frame.db.Form;
 import com.simple.architecture.business.mvp.Moudle.FillFormModel2;
+import com.simple.architecture.frame.db.Form;
 
 import java.util.List;
 
 import rx.Subscriber;
+
 
 /**
  * Created by sucer on 2016/4/24.

@@ -3,7 +3,7 @@ package com.frame.log.log4;
 import android.os.Environment;
 import android.util.Log;
 
-import com.example.liw.framelibrary.BuildConfig;
+import com.simple.architecture.log.BuildConfig;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
