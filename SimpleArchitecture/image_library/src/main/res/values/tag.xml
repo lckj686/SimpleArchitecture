@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--自定义控件做tag 用-->
+
+    <integer name="tag_page_index">25</integer>
+    <integer name="tag_record_rect">26</integer>
+
+
+    <integer name="tag_record_software">27</integer>
+    <integer name="tag_record_page">28</integer>
+</resources>

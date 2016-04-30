@@ -1,7 +1,6 @@
-package com.simple.architecture.frame.imageLoader.wrapper;
+package com.wstv.frame.imageLoader.wrapper;
 
 import android.content.Context;
-import android.graphics.Bitmap;
 import android.widget.ImageView;
 
 /**
@@ -24,9 +23,5 @@ public interface IImageLoader<T extends ImageView> {
 //    <T extends ImageView> void setImageUrl(T imageView, String url, OnLoaderListener listener);
 
 
-    interface OnLoaderListener {
-        void onLoadCompleted(Bitmap bitmap, String url);
 
-        void onLoadErrir(Throwable e);
-    }
 }

@@ -1,4 +1,4 @@
-package com.simple.architecture.frame.db;
+package com.frame.db;
 
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;

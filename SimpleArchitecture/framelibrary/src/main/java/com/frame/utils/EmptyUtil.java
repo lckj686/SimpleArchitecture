@@ -1,4 +1,4 @@
-package com.simple.architecture.frame.baseutils;
+package com.frame.utils;
 
 import android.text.TextUtils;
 
