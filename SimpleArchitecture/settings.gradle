@@ -1,1 +1,1 @@
-include ':app', ':log_library', ':image_library'
+include ':app', ':common_image_library', ':common_log_library', ':common_ui_library', ':cust_model_library', ':common_utils_library'

@@ -9,16 +9,22 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/image_library" />
-            <option value="$PROJECT_DIR$/log_library" />
+            <option value="$PROJECT_DIR$/common_image_library" />
+            <option value="$PROJECT_DIR$/common_log_library" />
+            <option value="$PROJECT_DIR$/common_ui_library" />
+            <option value="$PROJECT_DIR$/common_utils_library" />
+            <option value="$PROJECT_DIR$/cust_model_library" />
           </set>
         </option>
         <option name="myModules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/image_library" />
-            <option value="$PROJECT_DIR$/log_library" />
+            <option value="$PROJECT_DIR$/common_image_library" />
+            <option value="$PROJECT_DIR$/common_log_library" />
+            <option value="$PROJECT_DIR$/common_ui_library" />
+            <option value="$PROJECT_DIR$/common_utils_library" />
+            <option value="$PROJECT_DIR$/cust_model_library" />
           </set>
         </option>
       </GradleProjectSettings>

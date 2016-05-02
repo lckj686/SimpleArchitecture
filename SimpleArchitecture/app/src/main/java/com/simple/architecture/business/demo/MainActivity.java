@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 
-import com.simple.architecture.frame.net.retrofit.DemoRetrofit;
+import com.blue.moudle.http.retrofit.DemoRetrofit;
 import com.simple.architecture.business.rxjava.OperateSubject;
 
 
