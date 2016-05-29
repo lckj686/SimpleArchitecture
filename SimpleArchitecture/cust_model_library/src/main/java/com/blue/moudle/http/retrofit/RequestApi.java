@@ -2,6 +2,7 @@ package com.blue.moudle.http.retrofit;
 
 import java.util.HashMap;
 import java.util.Map;
+
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.GET;
@@ -15,6 +16,7 @@ public interface RequestApi {
     @GET
     Call<Object> requestFullUrl(@Url String s);
 
+//    @Headers("Cache-Control: public, max-age=12")
     @GET("/appstore/new1")
     Observable<HashMap<String, Object>> requestDemo(@QueryMap Map<String, Object> map);
 

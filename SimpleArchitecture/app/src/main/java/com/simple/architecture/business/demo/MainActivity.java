@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 
 import com.blue.moudle.http.retrofit.DemoRetrofit;
-import com.simple.architecture.business.rxjava.OperateSubject;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -20,10 +19,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
 
-        OperateSubject subject = new OperateSubject();
-        subject.publishSubject();
+//        OperateSubject subject = new OperateSubject();
+//        subject.publishSubject();
 
-        new DemoRetrofit().request();
+        DemoRetrofit demoRetrofit = new DemoRetrofit();
+        demoRetrofit.init(this);
+        demoRetrofit.request();
     }
 
 

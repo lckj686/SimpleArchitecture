@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
-
+apply plugin: 'me.tatarka.retrolambda'
+apply plugin: 'com.neenbedankt.android-apt'
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.3"
@@ -15,6 +16,11 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 }
 
@@ -39,4 +45,5 @@ dependencies {
     compile 'com.google.protobuf:protobuf-java:2.4.1'
     compile 'io.reactivex:rxjava-joins:0.22.0'
     compile 'com.squareup.sqlbrite:sqlbrite:0.6.3'
+    compile project(path: ':common_utils_library')
 }

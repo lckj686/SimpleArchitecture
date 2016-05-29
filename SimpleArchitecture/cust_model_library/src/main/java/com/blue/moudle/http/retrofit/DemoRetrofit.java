@@ -19,6 +19,7 @@
 
 package com.blue.moudle.http.retrofit;
 
+import android.content.Context;
 import android.util.Log;
 
 import java.util.HashMap;
@@ -31,15 +32,21 @@ import rx.schedulers.Schedulers;
 
 public class DemoRetrofit {
     private String TAG = DemoRetrofit.class.getSimpleName();
+    RequestApi apiService;// = RetrofitFactory.getInstance().create(RequestApi.class);
 
+    long lastTime = 0;
+
+    public void init(Context context) {
+        apiService = new RetrofitFactory(context).retrofit.create(RequestApi.class);
+    }
 
     public void request() {
 
-        request3();
+        request2();
     }
 
     public void requestFullUrl() {
-        RequestApi apiService = RetrofitFactory.getInstance().create(RequestApi.class);
+
         Call<Object> call = apiService.requestFullUrl("http://www.baidu.com");
         call.enqueue(new Callback<Object>() {
 
@@ -60,7 +67,6 @@ public class DemoRetrofit {
     }
 
     public void request2() {
-        RequestApi apiService = RetrofitFactory.getInstance().create(RequestApi.class);
 
         HashMap<String, Object> map = new HashMap<String, Object>();
         map.put("c", "huawei");
@@ -80,18 +86,19 @@ public class DemoRetrofit {
 
                     @Override
                     public void onError(Throwable e) {
-                        Log.d(TAG, "onError  " + e.toString());
+                        Log.e(TAG, "onError  " + e.toString());
                     }
 
                     @Override
                     public void onNext(HashMap<String, Object> o) {
-                        Log.d(TAG, "onNext  " + o.toString());
+                        long current = System.currentTimeMillis() / 1000;
+                        Log.d(TAG, (current - lastTime) + "  onNext  " + o.toString());
+                        lastTime = current;
                     }
                 });
     }
 
     public void request3() {
-        RequestApi apiService = RetrofitFactory.getInstance().create(RequestApi.class);
 
         HashMap<String, Object> map = new HashMap<String, Object>();
         map.put("c", "huawei");
