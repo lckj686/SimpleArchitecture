@@ -73,8 +73,8 @@ dependencies {
     compile 'io.reactivex:rxjava-joins:0.22.0'
     compile 'com.squareup.sqlbrite:sqlbrite:0.6.3'
     compile project(path: ':common_log_library')
-    compile project(':common_image_library')
-    compile project(path: ':cust_model_library')
-    compile project(path: ':common_utils_library')
+    compile project(':lib_cust_model')
+    compile project(path: ':lib_cust_model')
+    compile project(path: ':lib_common_utils')
     compile 'com.google.dagger:dagger:2.4'
 }

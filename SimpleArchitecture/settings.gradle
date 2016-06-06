@@ -1,1 +1,6 @@
-include ':app', ':common_image_library', ':common_log_library', ':common_ui_library', ':cust_model_library', ':common_utils_library'
+include ':app', 
+':lib_cust_model', 
+':common_log_library', 
+':common_ui_library',
+':lib_common_utils',
+':lib_common_image'

@@ -4,13 +4,13 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SimpleArchitecture.iml" filepath="$PROJECT_DIR$/SimpleArchitecture.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/common_image_library/common_image_library.iml" filepath="$PROJECT_DIR$/common_image_library/common_image_library.iml" />
       <module fileurl="file://$PROJECT_DIR$/common_log_library/common_log_library.iml" filepath="$PROJECT_DIR$/common_log_library/common_log_library.iml" />
       <module fileurl="file://$PROJECT_DIR$/common_ui_library/common_ui_library.iml" filepath="$PROJECT_DIR$/common_ui_library/common_ui_library.iml" />
-      <module fileurl="file://$PROJECT_DIR$/common_utils_library/common_utils_library.iml" filepath="$PROJECT_DIR$/common_utils_library/common_utils_library.iml" />
-      <module fileurl="file://$PROJECT_DIR$/cust_model_library/cust_model_library.iml" filepath="$PROJECT_DIR$/cust_model_library/cust_model_library.iml" />
       <module fileurl="file://$PROJECT_DIR$/framelibrary/framelibrary.iml" filepath="$PROJECT_DIR$/framelibrary/framelibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/image_library/image_library.iml" filepath="$PROJECT_DIR$/image_library/image_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_common_image/lib_common_image.iml" filepath="$PROJECT_DIR$/lib_common_image/lib_common_image.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_common_utils/lib_common_utils.iml" filepath="$PROJECT_DIR$/lib_common_utils/lib_common_utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_cust_model/lib_cust_model.iml" filepath="$PROJECT_DIR$/lib_cust_model/lib_cust_model.iml" />
     </modules>
   </component>
 </project>
